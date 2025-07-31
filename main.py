@@ -10,7 +10,7 @@ def main(message):
 
 #Команда /MyID
 
-@bot.message_handler(commands=['MyID'])
+@bot.message_handler(commands=['MyID', 'айди', 'Айди', 'АЙДИ'])
 def ID(message):
     bot.send_message(message.chat.id, f'Ваш ID: {message.from_user.id}.')
 
